@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    width: 80vw;
+    height: 80vh;
+    max-width: 450px;
+    background:rgb(26, 31, 36);
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(59, 135, 197, 0.8),-2px -2px 10px rgba(187, 71, 205, 0.8);
+    flex-direction: column;
+    border-radius: 10px;
+}
+.hand{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 80px;
+    position: relative;
+}
+.you-div{
+    text-shadow: 2px 2px 10px rgba(59, 135, 197, 0.8),-2px -2px 10px rgba(187, 71, 205, 0.8);
+}
+.computer-div{
+    text-shadow: 2px 2px 10px rgba(222, 150, 16, 0.8), -2px -2px 10px rgba(222, 50, 16, 0.8);
+}
+.choices{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.choice{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.8),-2px -2px 10px rgba(0,0,0,0.8);
+    font-size: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-shadow: 2px 2px 10px rgba(59, 135, 197, 0.8),-2px -2px 10px rgba(187, 71, 205, 0.8);
+}
+.choice:hover{
+    box-shadow: 2px 2px 10px rgba(59, 135, 197, 0.8),-2px -2px 10px rgba(187, 71, 205, 0.8);
+}
+.result{
+    width: 70%;
+    height: 10%;
+    background-color: transparent;
+margin-top: 25px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.win{
+    box-shadow:inset 2px 2px 20px rgba(16, 222, 19, 0.8),inset -2px -2px 20px rgba(16, 222, 19, 0.8);
+    color:rgba(16, 222, 19, 0.8);
+}
+.lose{
+    box-shadow:inset 2px 2px 20px rgba(222, 50, 16, 0.8),inset -2px -2px 20px rgba(222, 50, 16, 0.8);
+    color:rgba(222, 50, 16, 0.8);
+}
+.draw{
+    box-shadow:inset 2px 2px 20px rgba(16, 198, 222, 0.8),inset -2px -2px 20px rgba(17, 201, 225, 0.8);
+    color:rgba(17, 201, 225, 0.8);
+}
+.heading{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top:20px;
+    
+}
+.you-heading,.computer-heading{
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.8),-2px -2px 10px rgba(0,0,0,0.8);
+    
+}
+.you-heading{
+    color: rgba(17, 201, 225, 0.8);
+}
+.computer-heading{
+    color: rgba(225, 17, 62, 0.8);
+}
+
+@keyframes shake {
+    0%,50%,100%{
+        transform:translateY(0px);
+    }
+    25%{
+        transform:translateY(20px);
+    }
+    75%{
+        transform:translateY(-20px);
+    }
+}
