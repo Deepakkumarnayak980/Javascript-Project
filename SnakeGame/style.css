@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(23, 27, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px
+}
+.board{
+    width: 80vw;
+    max-width: 500px;
+    height: 500px;
+    background-color: transparent;
+    box-shadow: 2px 2px 10px black,-2px -2px 10px black,-2px -2px 10px black,-2px -2px 10px black;
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(14,1fr);
+    padding: 10px;
+}
+.food{
+    background-color: rgb(220, 149, 68);
+}
+.snake-head{
+    background-color: rgb(206, 55, 100);
+}
+#div0{
+    background-color: rgb(102, 173, 201);
+}
+.btn{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ button{
+    font-size: 20px;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.53);
+    background: transparent;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0),-2px -2px 10px rgb(46, 46, 46),-2px -2px 10px black,-2px -2px 10px black;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+ }
+ button:hover{
+    box-shadow:inset 2px 2px 10px rgb(0, 0, 0);
+    font-size: small;
+ }
+ .keys{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    display: none;
+   
+
+ }
+ .up,.down,.left,.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 90%;
+    background: transparent;
+    box-shadow: 2px 2px 10px black;
+
+ }
+ .up:hover,.down:hover,.left:hover,.right:hover{
+    box-shadow:inset 2px 2px 10px rgb(0, 0, 0);
+    font-size: small;
+ }
+ @media (max-width:900px) {
+    .board{
+        height: 400px;
+    }
+    body{
+        justify-content: start;
+        padding: 20px;
+    }
+    
+.keys{
+    display: flex;
+}
+ }

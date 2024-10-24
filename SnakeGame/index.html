@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="score">Score: 0</h1> 
+    <div class="board"></div>
+    <div class="keys">
+        <div class="up key" data-key="ArrowUp">
+            <img src="up.svg" alt="up" id="up">
+        </div>
+        <div class="down key" data-key="ArrowDown">
+            <img src="down.svg" alt="down" id="down">
+        </div>
+        <div class="left key" data-key="ArrowLeft">
+            <img src="left.svg" alt="left" id="left">
+        </div>
+        <div class="right key" data-key="ArrowRight">
+            <img src="right.svg" alt="right" id="right">
+        </div>
+    </div>
+    <div class="btn">
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
