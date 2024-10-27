@@ -104,7 +104,7 @@ function main() {
 
 randomFoodPosition();
 main();
-setIntervalID = setInterval(main, 300);
+setIntervalID = setInterval(main, 150);
 document.addEventListener("keydown", moveSnake);
 
 function reset() {
