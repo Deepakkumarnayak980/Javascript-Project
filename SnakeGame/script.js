@@ -20,6 +20,7 @@ function randomFoodPosition() {
     FoodY = Math.floor(Math.random() * 14) + 1;
 }
 
+
 function moveSnake(e) {
     if (e.key === "ArrowUp" && velocityY != 1) {
         velocityX = 0;
